@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUR Nursery Marketplace | Coming Soon</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #0f3d2e, #1e7f5c);
+        overflow: hidden;
+        color: #ffffff;
+      }
+
+      /* Floating Leaves */
+      .leaf {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 0 100% 0 100%;
+        animation: float 18s infinite linear;
+      }
+
+      .leaf:nth-child(1) {
+        left: 10%;
+        animation-duration: 25s;
+      }
+      .leaf:nth-child(2) {
+        left: 30%;
+        animation-duration: 18s;
+        width: 30px;
+        height: 30px;
+      }
+      .leaf:nth-child(3) {
+        left: 50%;
+        animation-duration: 33s;
+      }
+      .leaf:nth-child(4) {
+        left: 70%;
+        animation-duration: 28s;
+        width: 25px;
+        height: 25px;
+      }
+      .leaf:nth-child(5) {
+        left: 90%;
+        animation-duration: 23s;
+      }
+
+      @keyframes float {
+        0% {
+          bottom: -50px;
+          transform: rotate(0deg);
+        }
+        100% {
+          bottom: 110%;
+          transform: rotate(360deg);
+        }
+      }
+
+      .container {
+        position: relative;
+        z-index: 10;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(8px);
+        border-radius: 16px;
+        padding: 40px 30px;
+        max-width: 520px;
+        width: 100%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      }
+
+      /* .logo {
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    } */
+
+      .logo {
+        margin-bottom: 15px;
+      }
+
+      .logo img {
+        width: 90px;
+        max-width: 100%;
+      }
+
+      .tagline {
+        font-size: 14px;
+        opacity: 0.9;
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        font-size: 26px;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        font-size: 15px;
+        opacity: 0.9;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .btn {
+        text-decoration: none;
+        padding: 14px;
+        border-radius: 30px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        background: #ffffff;
+        color: #1e7f5c;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        background: #dff5ec;
+      }
+
+      footer {
+        margin-top: 25px;
+        font-size: 12px;
+        opacity: 0.8;
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 22px;
+        }
+        .logo {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Floating leaves -->
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+
+    <div class="container">
+      <div class="card">
+         <div class="logo"><img src="logo.png" alt="TUR Nursery Marketplace Logo"></div>
+        <!-- <div class="logo">TUR</div> -->
+        <div class="tagline">TUR Nursery Marketplace</div>
+
+        <h1>We’re Coming Soon 🌱</h1>
+        <p class="subtitle">
+          TUR is building Bangladesh’s digital nursery marketplace — connecting
+          plant lovers with trusted nurseries across the country.
+        </p>
+
+        <div class="buttons">
+          <a
+            href="https://facebook.com/turnursery/"
+            class="btn"
+            target="_blank"
+          >
+            Follow us on Facebook
+          </a>
+          <a
+            href="https://www.facebook.com/groups/1441380634213140/?ref=share&mibextid=NSMWBT"
+            class="btn"
+            target="_blank"
+          >
+            Join Our Facebook Community
+          </a>
+        </div>
+
+        <footer>© 2026 TUR • Grow with us 🌿</footer>
+      </div>
+    </div>
+  </body>
+</html>
